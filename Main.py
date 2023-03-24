@@ -19,32 +19,32 @@ from Modelos.FuncApartamento import FuncaoApartamento
 if __name__ == "__main__":
     criarTab = Tabelas()
     criarTab.criar_tabelas()
-    funcaoM = FuncaoMorador()
-    funcaoM2 = FuncaoMorador()
-    funcaoA = FuncaoApartamento()
-    funcaoB = FuncaoApartamento()
-    up = AtualizarCampos()   #teste
    
-    #morador = Morador("nome", "cel1", "cel2", "email", "cpf", "rg")
-    #apartamento = Apartamento("numero","andar","bloco")
+    fabio = Morador("fabio","1111","2222","fab@","3333","4444")
+    aptFb = Apartamento("01","4","BL01")
     
-    #funcaoM.cadastroMorador(morador.nome,morador.cel1,morador.cel2,morador.email,morador.cpf,morador.rg)
-    #funcaoA.cadastroApt(apartamento.numero,apartamento.andar,apartamento.bloco)
+    fb = FuncaoMorador()
+    fbApt = FuncaoApartamento()
     
-    #print ("nome:", morador.nome)
+    #fb.cadastroMorador(fabio.nome,fabio.cel1,fabio.cel2,fabio.email,fabio.cpf,fabio.rg)
+    #fbApt.cadastroApt(aptFb.numero,aptFb.andar,aptFb.bloco)
     
-    #funcaoA.vincularMorador("numero","andar","bloco",morador.cpf)
+    #fbApt.vincularMorador(aptFb.numero,aptFb.andar,aptFb.bloco,fabio.cpf)
     
+    cesar = Morador("cesar","7777","8888","ces@","9999","666")
+    aptCs = Apartamento("02","8","BL09")
     
-    morador2 = Morador("cesar","333","4444","wer@","88888","2222222")
-    apt2 = Apartamento("01","1","bl1")
+    cs = FuncaoMorador()
+    csApt = FuncaoApartamento()
     
-    funcaoM2.cadastroMorador(morador2.nome,morador2.cel1,morador2.cel2,morador2.email,morador2.cpf,morador2.rg)
-    funcaoB.cadastroApt(apt2.numero,apt2.andar,apt2.bloco)
-    funcaoA.vincularMorador("1","1","bl1",morador2.cpf)
+    cs.cadastroMorador(cesar.nome,cesar.cel1,cesar.cel2,cesar.email,cesar.cpf,cesar.rg)
+    csApt.cadastroApt(aptCs.numero,aptCs.andar,aptCs.bloco)
     
-    #up.atualizarApartamentoMorador(mor2.nome) #teste
-    print("morador2", morador2.cpf)
+    csApt.vincularMorador(aptCs.numero,aptCs.andar,aptCs.bloco,cesar.cpf)
+   
+   
+   
+   
    
     
    
