@@ -20,7 +20,7 @@ class FuncaoApartamento:
     def vincularMorador(self,numero, andar, bloco, cpf):
         self.buscar.buscarApartamento(numero,andar,bloco)  
         morador = self.buscar.buscarMorador(cpf)
-        self.atualizar.atualizarApartamentoMorador(str(morador))
+        self.atualizar.atualizarApartamentoMorador(numero, andar,bloco,morador)
                
                 
         

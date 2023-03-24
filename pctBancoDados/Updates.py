@@ -8,13 +8,13 @@ class AtualizarCampos:
         self.cursor = self.banco.cursor()
      
     
-    def atualizarApartamentoMorador(self, morador): 
+    def atualizarApartamentoMorador(self, numero, andar, bloco, morador): 
         try:
            self.cursor.execute(   
                 """
-                 UPDATE  Apartamento SET morador = ?
+                 UPDATE  Apartamento SET morador = ? where numero = ? AND andar = ? AND bloco = ?
                         
-                """,(morador,)
+                """,(numero, andar, bloco, morador,)
                 )
            self.banco.commit()
             

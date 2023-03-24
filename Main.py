@@ -31,6 +31,8 @@ if __name__ == "__main__":
     funcaoM.cadastroMorador(morador.nome,morador.cel1,morador.cel2,morador.email,morador.cpf,morador.rg)
     funcaoA.cadastroApt(apartamento.numero,apartamento.andar,apartamento.bloco)
     
+    print ("nome:", morador.nome)
+    
     
     
     funcaoA.vincularMorador("numero","andar","bloco",morador.cpf)

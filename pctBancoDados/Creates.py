@@ -30,7 +30,7 @@ class Tabelas:
                                 andar TEXT NOT NULL,
                                 bloco TEXT NOT NULL,
                                 morador TEXT,
-                                depentende TEXT,
+                                dependente TEXT,
                                 veiculo TEXT
                             )
                         """
