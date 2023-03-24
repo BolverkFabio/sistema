@@ -14,7 +14,7 @@ class AtualizarCampos:
                 """
                  UPDATE  Apartamento SET morador = ? where numero = ? AND andar = ? AND bloco = ?
                         
-                """,(numero, andar, bloco, morador,)
+                """,( morador, numero, andar, bloco,)
                 )
            self.banco.commit()
             
