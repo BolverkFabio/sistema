@@ -19,28 +19,20 @@ from Modelos.FuncApartamento import FuncaoApartamento
 if __name__ == "__main__":
     criarTab = Tabelas()
     criarTab.criar_tabelas()
+    s = Buscas()
    
-    fabio = Morador("fabio","1111","2222","fab@","3333","4444")
-    aptFb = Apartamento("01","4","BL01")
+    a = Morador("santos","555", "666","es@","6666","444")
+    a2 = FuncaoMorador()
+    a2.cadastroMorador(a.nome,a.cel1,a.cel2,a.email,a.cpf,a.rg)
+    s.buscarMorador(a.cpf)
     
-    fb = FuncaoMorador()
-    fbApt = FuncaoApartamento()
+    #s.buscarMorador("9999")
     
-    #fb.cadastroMorador(fabio.nome,fabio.cel1,fabio.cel2,fabio.email,fabio.cpf,fabio.rg)
-    #fbApt.cadastroApt(aptFb.numero,aptFb.andar,aptFb.bloco)
     
-    #fbApt.vincularMorador(aptFb.numero,aptFb.andar,aptFb.bloco,fabio.cpf)
     
-    cesar = Morador("cesar","7777","8888","ces@","9999","666")
-    aptCs = Apartamento("02","8","BL09")
     
-    cs = FuncaoMorador()
-    csApt = FuncaoApartamento()
     
-    cs.cadastroMorador(cesar.nome,cesar.cel1,cesar.cel2,cesar.email,cesar.cpf,cesar.rg)
-    csApt.cadastroApt(aptCs.numero,aptCs.andar,aptCs.bloco)
-    
-    csApt.vincularMorador(aptCs.numero,aptCs.andar,aptCs.bloco,cesar.cpf)
+
    
    
    

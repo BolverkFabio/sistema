@@ -18,7 +18,7 @@ class Tabelas:
                                 cel1 TEXT NOT NULL,
                                 cel2 TEXT,
                                 email TEXT NOT NULL,
-                                cpf TEXT NOT NULL,
+                                cpf TEXT NOT NULL UNIQUE,
                                 rg TEXT NOT NULL
                             )
                         """

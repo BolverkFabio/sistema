@@ -28,14 +28,15 @@ class Buscas:
         try:
             self.cursor.execute(
                 """
-                    SELECT * FROM Morador;
+                    SELECT * FROM Morador 
                 """
+                
             )
-            for linha in self.cursor.fetchall():
-                if linha[4] == cpf:
-                     #print('sao iguais')
-                     return linha[0] 
-                break 
+           
+            for linha in self.cursor.fetchall(): 
+              if(linha[4] == cpf):
+                  print(linha[0])
+               
         except sqlite3.Error as e:
             print(f"Erro ao ler dados: {e}")
             
